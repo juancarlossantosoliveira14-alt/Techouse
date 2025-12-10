@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    background-color: #000917;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background: #040415;
+    padding: 10px 20px;
+}
+
+.header img {
+    width: 55px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    color: #0ff;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 0 0 10px #0ff;
+}
+#Icone{
+    filter: invert(100%);
+}
+.hero {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+.linha-container {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.linha {
+    width: 100%;
+    height: 2px;
+    background: white;
+    margin: 10px auto 40px auto;
+    z-index: 1;
+    position: relative;
+}
+
+.imagem-direita {
+    position: absolute;
+    margin-left: 300px;
+    top: -390px;
+    width: 400px;
+    z-index: 2; 
+}
+.bloco {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 20px;            
+}
+
+.bloco.invertido {
+    flex-direction: row-reverse;
+}
+.imagem {
+    width: 38%;
+    border-radius: 25px;
+    box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+}
+.texto {
+    width: 48%;
+}
+
+.texto h2 {
+    margin-top: 40px;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+}
+
+.texto p {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+footer{
+    color: white;
+    text-align: center;
+    margin-left: 70px;
+}
+
+#menu-toggle {
+    display: none;
+}
+#Icone {
+    cursor: pointer;
+    filter: invert(100%);
+    margin-right: 20px;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 250px;
+    height: 100%;
+    background: #020a18;
+    padding: 20px;
+    transition: 0.3s;
+    box-shadow: 0 0 20px #00eaff;
+    z-index: 3000;
+    color: white;
+}
+#menu-toggle:checked ~ .sidebar {
+    left: 0;
+}
+
+.sidebar .perfil img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 15px #0ff;
+}
+
+.sidebar h3 {
+    font-size: 22px;
+    color: #0ff;
+    margin-bottom: 10px;
+}
+
+.sidebar p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#Icone {
+    cursor: pointer;
+    filter: invert(100%);
+    margin-right: 20px;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 250px;
+    height: 100%;
+    background: #020a18;
+    padding: 20px;
+    transition: 0.3s;
+    box-shadow: 0 0 20px #00eaff;
+    z-index: 3000;
+}
+#menu-toggle:checked ~ .sidebar {
+    left: 0;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 2000;
+}
+
+#menu-toggle:checked ~ .overlay {
+    display: block;
+}
+
+
+.overlay {
+    cursor: pointer;
+}
+
+
+
